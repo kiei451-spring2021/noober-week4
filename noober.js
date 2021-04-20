@@ -1,4 +1,4 @@
-async function pageLoaded() {
+window.addEventListener('DOMContentLoaded', async function() {
   let response = await fetch('https://kiei451.com/api/rides.json')
   let json = await response.json()
 
@@ -7,7 +7,4 @@ async function pageLoaded() {
   
   // 🔥 start here: write the recipe (algorithm), then write the code
   
-}
-
-window.addEventListener('DOMContentLoaded', pageLoaded)
-
+})
